@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
+	<title>history</title>
+</head>
+<style type="text/css">
 	.clear {
 			clear: both;
 		}
@@ -44,29 +45,55 @@
 		.vi:visited {
 			color: white;
 		}
-				#formc1 {
+		main {
 			margin-left: 250px;
 		}
-		#formc {
-			margin-left: 250px;
-			background-image: url("동전.jpg");
-			width: 1000px;
-			height: 300px;
-		}
-				footer {
+
+		footer {
 			width: 1000px;
 			height: 45px;
 			background-color: black;
 			padding-top: 1px;
 			margin-left: 250px;
 		}
-		</style>
+		.ani {
+			position: relative;
+			width: 400px;
+			height: 232px;
+			animation-name: ani2;
+			animation-timing-function: linear;
+			animation-duration: 9s;
+/*			animation-delay: 1s;
+*/			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			animation-play-state: running;
+		}
+
+		@keyframes ani2 {
+			0% {
+				background-image: url("book.jpg");
+				left: 0px;
+			}
+			50% {
+				background-color: #7B4949;
+				left: 200px;
+			}
+			100% {
+				background-image: white;
+				left: 610px;
+			}
+
+
+		}
+</style>
 <body>
 <header>
-<a href="index.html"><img src="로고.jpg" width="1500px" ></a>
+<a href="index.html">	<img src="로고.jpg" width="1500px" ></a>
 </header>
 <div>welcome to Fiscus journal.</div>
 <nav>
+
 	<ul>
 		
 		<li id="a">&nbsp;<a class="vi" href="뉴스레터.html">NEWS LETTER</a></div>&nbsp;&nbsp;</li>
@@ -76,49 +103,13 @@
 		<li>&nbsp;WORLD&nbsp;&nbsp;</li>
 		
 		<li>&nbsp;BUSINESS&nbsp;&nbsp;</li>
-	</ul>
+</ul>
 </nav>
-	<main>
-<h3 id="formc1">
-Sign in
-</h3>
-<form id="formc">
-	<table>
-		<tr>
-			<td>NAME</td>
-			<td><input type="text" placeholder="NAME"></td>
-		</tr>
-		<tr>
-			<td>e-mail</td>
-			<td><input type="text" name="email" placeholder="e-mail"> @ <select>
-				<option>
-				선택
-				</option>
-				<option>
-				naver.com
-				</option>
-				<option>
-				gmail.com
-				</option>
-				<option>
-				hanmail.com
-				</option>
-				<option>
-				icloud.com
-				</option>
-				<option>
-				daum.net
-				</option>
-			</select></td>
+<main>
+ 	<div class="ani">
+ 	</div>
 
-		</tr>
-		<tr>
-			<td>
-			<input type="submit" name="submit">
-		</td>
-		</tr>
-	</table>
-</form>
+ 	<img src="text.jpg" width="1000px">
 </main>
 <footer>
 	<ul class="uul">

@@ -17,14 +17,16 @@
 			text-align: center;
 		}
 		nav {
-			background-image: url(동전.jpg);
-			width: 1500px;
+			width: 1000px;
 			height: 40px;
 			margin-bottom: 2px;
 			border-top: solid 1px black;
-			border-bottom: solid 1px black;
-		}
-				ul {
+			background-position: center;
+			margin-left: 250px;
+			background-color: black;
+			}
+
+		ul {
 			margin: 10px;
 			text-align: center;
 
@@ -32,7 +34,29 @@
 		li {
 			list-style-type: none;
 			display: inline;
+			text-shadow: 3px 3px 3px white;
+			color: white;
+
+}
+
+		.vi:link {
+			text-decoration: none;
 		}
+		.vi:visited {
+			color: white;
+		}
+		main {
+			margin-left: 250px;
+		}
+
+		footer {
+			width: 1000px;
+			height: 45px;
+			background-color: black;
+			padding-top: 1px;
+			margin-left: 250px;
+		}
+
 </style>
 <body>
 <header>
@@ -40,19 +64,31 @@
 </header>
 <div>welcome to Fiscus journal.</div>
 <nav>
+
 	<ul>
 		
-		<li id="a">&nbsp;<a href="뉴스레터.html">NEWS LETTER</a>&nbsp;&nbsp;</li>
+		<li id="a">&nbsp;<a class="vi" href="뉴스레터.html">NEWS LETTER</a></div>&nbsp;&nbsp;</li>
 		
-		<li id="b">&nbsp;<a href="history.html">ECONOMY</a>&nbsp;&nbsp;</li>
+		<li id="b">&nbsp;<a class="vi" href="history.html">ECONOMY</a></div>&nbsp;&nbsp;</li>
 
 		<li>&nbsp;WORLD&nbsp;&nbsp;</li>
 		
 		<li>&nbsp;BUSINESS&nbsp;&nbsp;</li>
-	</ul>
+</ul>
 </nav>
 <main>
-	<img src="소개본문.jpg">
+	<img src="소개본문.jpg" width="1000px">
 </main>
+<footer>
+	<ul class="uul">
+		<div class="ddiv">
+		<li>©Jung HyunJu</li>&nbsp;&nbsp;
+		<li>Contact Us</li>&nbsp;&nbsp;
+		<li>Business</li>&nbsp;&nbsp;
+		<li>Help</li>
+	</div>
+	</ul>
+
+</footer>
 </body>
 </html>
